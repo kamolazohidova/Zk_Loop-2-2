@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+
+
+  <!-- STYLESHEETS  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="main-contanet">
+    <div class="container">
+      <div class="profile-settings">
+        <form class="profile-settings-form" action="https://echo.htmlacademy.ru" method="POST">
+          <header class="account-settings-header">
+            <h1 class="settings-heading">Account settings</h1>
+            <a class="settings-link" href="#">
+              <img class="settings-img" src="img/icon-close.svg" alt="icon" width="24" height="24">
+            </a>
+          </header>
+          <div class="form-body">
+            <img class="form-body-img" src="img/avatar.jpg" alt="images" width="70" height="70">
+            <div class="account-setting-form-group">
+              <label class="form-label" for="setting-username-input">Username</label>
+              <input class="form-field" type="text" name="username" id="setting-username-input"
+                placeholder="Enter your username" required>
+            </div>
+            <div class="account-settings-form-row">
+              <div class="account-setting-form-group">
+                <label class="form-label" for="setting-first-name-input">First name</label>
+                <input class="form-field" type="text" name="first_name" id="setting-first-name-input"
+                  placeholder="Enter your first name" required>
+              </div>
+              <div class="account-setting-form-group">
+                <label class="form-label" for="setting-last-name-input">Last name</label>
+                <input class="form-field" type="text" name="last_name" id="setting-last-name-input"
+                  placeholder="Enter your last name" required>
+              </div>
+            </div>
+            <div class="account-setting-form-group">
+              <label class="form-label" for="setting-email-input">Email</label>
+              <input class="form-field" type="email" name="email" id="setting-email-input"
+                pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Enter your email" required>
+            </div>
+            <div class="account-setting-form-group">
+              <label for="setting-bio-textarea" class="form-label">Bio</label>
+              <textarea class="form-field form-field-textarea" name="bio" id="setting-bio-textarea"
+                placeholder="Tell us about yourself" required></textarea>
+            </div>
+          </div>
+          <footer class="footer">
+          <button class="form-action-button" type="button">Cancel</button>
+          <button class="form-action-button" type="submit">Save</button>
+        </footer>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
